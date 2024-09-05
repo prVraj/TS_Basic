@@ -33,4 +33,31 @@ const greeting = greet({ name: "vraj", age: 30 });
 console.log(greeting);
 
 
+type NewPerson = {
+  readonly _id : Array<number>;
+  name: string;
+  age: number;
+  isActive: boolean;
+};
+
+let person: NewPerson = {
+  _id: [1, 2, 3],
+  name: "vraj",
+  age: 30,
+  isActive: true,
+};
+
+person.age = 31;
+// person._id = [1, 2, 3, 4];
+
+
+
+
+
+
+
+
+
+
+
 export {};
